@@ -1157,13 +1157,166 @@
                         </div>
                     </div>
 
-                    <!-- Технические аспекты -->
-                    <div class="form-section">
-                        <div class="section-header">[БЛОК_08] ТЕХНИЧЕСКИЕ АСПЕКТЫ</div>
+                     <div class="form-section">
+                        <div class="section-header">[БЛОК_08] ТЕРМИНАЛЬНЫЕ ИНТЕРФЕЙСЫ В D&D</div>
                         <div class="section-content">
                             <div class="question">
                                 <div class="question-text">
-                                    <span class="question-number">8.1</span> Оцените удобство интерфейса (1-10)
+                                    <span class="question-number">8.1</span> Хотели бы вы видеть похожий терминальный интерфейс в реальной D&D сессии?
+                                </div>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_in_dnd" value="definitely" id="term_def">
+                                        <label for="term_def">Определенно да - это добавило бы атмосферы</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_in_dnd" value="probably" id="term_prob">
+                                        <label for="term_prob">Скорее да - но только для определенных моментов</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_in_dnd" value="maybe" id="term_maybe">
+                                        <label for="term_maybe">Возможно - зависит от реализации</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_in_dnd" value="unlikely" id="term_unlikely">
+                                        <label for="term_unlikely">Скорее нет - предпочитаю традиционные методы</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_in_dnd" value="no" id="term_no">
+                                        <label for="term_no">Определенно нет - это отвлекает от игры</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="question">
+                                <div class="question-text">
+                                    <span class="question-number">8.2</span> Для каких целей в D&D вы бы использовали терминальный интерфейс? (выберите все подходящие)
+                                </div>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_usage" value="investigations" id="term_investigations">
+                                        <label for="term_investigations">Расследования и поиск информации</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_usage" value="tech_interactions" id="term_tech">
+                                        <label for="term_tech">Взаимодействие с технологическими объектами</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_usage" value="quests" id="term_quests">
+                                        <label for="term_quests">Получение заданий и брифингов</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_usage" value="maps" id="term_maps">
+                                        <label for="term_maps">Просмотр карт и схем локаций</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_usage" value="inventory" id="term_inventory">
+                                        <label for="term_inventory">Управление инвентарем и снаряжением</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_usage" value="communication" id="term_comm">
+                                        <label for="term_comm">Коммуникация между персонажами</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_usage" value="lore" id="term_lore">
+                                        <label for="term_lore">Доступ к лору и истории мира</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="question">
+                                <div class="question-text">
+                                    <span class="question-number">8.3</span> На каком этапе игры терминальный интерфейс был бы наиболее полезен?
+                                </div>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_timing" value="during_session" id="timing_during">
+                                        <label for="timing_during">Во время самой сессии как игровой элемент</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_timing" value="between_sessions" id="timing_between">
+                                        <label for="timing_between">Между сессиями для получения дополнительной информации</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_timing" value="campaign_start" id="timing_start">
+                                        <label for="timing_start">В начале кампании для введения в сеттинг</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_timing" value="puzzles" id="timing_puzzles">
+                                        <label for="timing_puzzles">Для решения головоломок и загадок</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="terminal_timing" value="character_creation" id="timing_creation">
+                                        <label for="timing_creation">Для создания персонажа и бэкстори</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="question">
+                                <div class="question-text">
+                                    <span class="question-number">8.4</span> Какой уровень интерактивности терминала вы предпочли бы?
+                                </div>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" name="interactivity_level" value="simple" id="level_simple">
+                                        <label for="level_simple">Простое чтение текста и выбор опций</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="interactivity_level" value="commands" id="level_commands">
+                                        <label for="level_commands">Ввод команд и текстовых ответов</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="interactivity_level" value="puzzles" id="level_puzzles">
+                                        <label for="level_puzzles">Решение логических задач и головоломок</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="interactivity_level" value="minigames" id="level_mini">
+                                        <label for="level_mini">Мини-игры и интерактивные элементы</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="interactivity_level" value="full_control" id="level_full">
+                                        <label for="level_full">Полноценное управление игровыми механиками</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="question">
+                                <div class="question-text">
+                                    <span class="question-number">8.5</span> Что могло бы помешать использованию такого инструмента в вашей группе?
+                                </div>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_obstacles" value="technical_issues" id="obs_tech">
+                                        <label for="obs_tech">Технические сложности у участников</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_obstacles" value="distraction" id="obs_distraction">
+                                        <label for="obs_distraction">Отвлечение от основной игры</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_obstacles" value="dm_prep" id="obs_prep">
+                                        <label for="obs_prep">Дополнительная подготовка для DM</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_obstacles" value="traditional_preference" id="obs_traditional">
+                                        <label for="obs_traditional">Предпочтение классических методов</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" name="terminal_obstacles" value="nothing" id="obs_nothing">
+                                        <label for="obs_nothing">Ничего не помешало бы</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Технические аспекты -->
+                    <div class="form-section">
+                        <div class="section-header">[БЛОК_09] ТЕХНИЧЕСКИЕ АСПЕКТЫ</div>
+                        <div class="section-content">
+                            <div class="question">
+                                <div class="question-text">
+                                    <span class="question-number">9.1</span> Оцените удобство интерфейса (1-10)
                                 </div>
                                 <div class="rating-scale">
                                     <div class="rating-option">
@@ -1211,7 +1364,7 @@
 
                             <div class="question">
                                 <div class="question-text">
-                                    <span class="question-number">8.2</span> Сколько времени вы провели на сайте?
+                                    <span class="question-number">9.2</span> Сколько времени вы провели на сайте?
                                 </div>
                                 <select name="time_spent">
                                     <option value="">>>> Выберите...</option>
@@ -1224,7 +1377,7 @@
 
                             <div class="question">
                                 <div class="question-text">
-                                    <span class="question-number">8.3</span> Работал ли звук корректно?
+                                    <span class="question-number">9.3</span> Работал ли звук корректно?
                                 </div>
                                 <div class="radio-group">
                                     <div class="radio-option">
@@ -1250,25 +1403,25 @@
 
                     <!-- Финальные вопросы -->
                     <div class="form-section">
-                        <div class="section-header">[БЛОК_09] ФИНАЛЬНАЯ ОЦЕНКА</div>
+                        <div class="section-header">[БЛОК_10] ФИНАЛЬНАЯ ОЦЕНКА</div>
                         <div class="section-content">
                             <div class="question">
                                 <div class="question-text">
-                                    <span class="question-number">9.1</span> Самый яркий момент опыта
+                                    <span class="question-number">10.1</span> Самый яркий момент опыта
                                 </div>
                                 <textarea name="best_moment" placeholder=">> Опишите что больше всего впечатлило..."></textarea>
                             </div>
 
                             <div class="question">
                                 <div class="question-text">
-                                    <span class="question-number">9.2</span> Главное предложение по улучшению
+                                    <span class="question-number">10.2</span> Главное предложение по улучшению
                                 </div>
                                 <textarea name="improvement_suggestion" placeholder=">> Что бы вы изменили или добавили..."></textarea>
                             </div>
 
                             <div class="question">
                                 <div class="question-text">
-                                    <span class="question-number">9.3</span> Дополнительные комментарии
+                                    <span class="question-number">10.3</span> Дополнительные комментарии
                                 </div>
                                 <textarea name="additional_comments" placeholder=">> Любые дополнительные мысли..."></textarea>
                             </div>
